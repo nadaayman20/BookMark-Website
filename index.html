@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container py-4 p-3">
+        <header class=" pb-3 px-5">
+               <h2>Bookmarker</h2>
+        </header>
+
+        <div class="book py-5 text-center">
+            <h4 class="fw-bold my-2">Bookmark your favorite sites</h4>
+            <label for="name" class="my-2 fw-bold">Site Name</label>
+            <input type="text" class=" form-control form-control-sm w-75 my-1 mx-auto" id="name" placeholder="Bookmarker Name ">
+            
+            <label for="url" class="my-2 fw-bold">Site URL</label>
+            <input type="text" class=" form-control form-control-sm w-75 mt-1 mb-4 mx-auto" id="url" placeholder="Website URL">
+            <p id="invalidData" class=" text-danger"></p>
+            <button class="btn btn-primary" id="sub" onclick="addSite()">Submit</button>
+          
+        </div>
+
+      
+
+        <div>
+            <input type="text" class="serch form-control mx-auto bg-light" onkeyup="search(this.value)" placeholder="Search .... ">
+        </div> 
+        
+        <table class="table table-striped" style="width: 90%; margin: auto;">
+            <thead>
+              <tr>
+                  <th>Site Name</th>
+                  <th>Visite</th>
+                  <th>Delete</th>
+                  <th>Update</th>
+              </tr>
+            </thead>
+              <tbody id="tbody">
+        
+  
+              </tbody>
+  
+  
+          </table>
+       
+        <footer class=" py-3 px-5">
+            <h6>&copy 2019 Bookmarker Inc</h6>
+     </footer>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
